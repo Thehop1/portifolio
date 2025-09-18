@@ -1,261 +1,73 @@
-<!--
-  Single-file GitHub Pages website for an Electronic & Electrical Engineer
-  File: index.html
--->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio website of an Electronic & Electrical Engineer" />
-  <title>Ethan H — Electronic & Electrical Engineer</title>
-
-  <style>
-    :root{
-      --bg: #0f1724;
-      --card: #0b1220;
-      --muted: #94a3b8;
-      --accent: #7c5cff;
-      --glass: rgba(255,255,255,0.03);
-      --text: #e6eef8;
-      --max-w: 1100px;
-    }
-    [data-theme="light"]{
-      --bg: #f7fafc;
-      --card: #ffffff;
-      --muted: #475569;
-      --accent: #6d28d9;
-      --glass: rgba(0,0,0,0.04);
-      --text: #071135;
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
-      background:linear-gradient(180deg,var(--bg), #05070a 120%);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
-      padding:32px 20px;
-      display:flex;
-      justify-content:center;
-    }
-
-    .container{width:100%;max-width:var(--max-w)}
-    header{
-      display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;
-    }
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#00bcd4);display:flex;align-items:center;justify-content:center;font-weight:700}
-    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
-    nav a{color:var(--muted);text-decoration:none;font-weight:600}
-    nav a:hover{color:var(--text)}
-
-    .hero{
-      background:linear-gradient(180deg, rgba(124,92,255,0.06), transparent 40%);
-      padding:36px;border-radius:14px;margin-bottom:26px;backdrop-filter: blur(6px);
-      box-shadow: 0 6px 24px rgba(2,6,23,0.6);
-      display:flex;gap:28px;align-items:center;flex-wrap:wrap
-    }
-    .hero-left{flex:1;min-width:260px}
-    h1{margin:0 0 8px 0;font-size:28px}
-    p.lead{margin:0;color:var(--muted)}
-    .cta{margin-top:18px;display:flex;gap:12px}
-    .btn{padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
-    .btn-primary{background:linear-gradient(90deg,var(--accent),#00bcd4);color:white}
-    .btn-ghost{background:transparent;border:1px solid var(--glass);color:var(--text)}
-
-    .hero-right{width:320px;min-width:220px}
-    .card{background:var(--card);padding:16px;border-radius:12px;border:1px solid var(--glass)}
-
-    .projects{position:relative;overflow:hidden}
-    .project-slide{display:none;padding:20px;border-radius:12px;background:var(--card);border:1px solid var(--glass)}
-    .project-slide.active{display:block;animation:fade 0.6s ease-in-out}
-    @keyframes fade{from{opacity:0}to{opacity:1}}
-    .slide-controls{margin-top:12px;text-align:center}
-    .slide-controls button{margin:0 4px;padding:8px 12px;border-radius:8px;border:0;cursor:pointer;background:var(--glass);color:var(--text)}
-
-    .grid-2{display:grid;grid-template-columns:1fr 320px;gap:18px}
-    @media (max-width:900px){.grid-2{grid-template-columns:1fr}.hero-right{width:100%}}
-
-    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
-
-    .muted{color:var(--muted)}
-    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);font-weight:600}
-
-    form{display:flex;flex-direction:column;gap:8px}
-    input,textarea{padding:10px;border-radius:8px;border:1px solid var(--glass);background:transparent;color:var(--text)}
-    input::placeholder,textarea::placeholder{color:var(--muted)}
-    textarea{min-height:120px;resize:vertical}
-
-    a:focus,button:focus,input:focus,textarea:focus{outline:3px solid rgba(124,92,255,0.16);outline-offset:3px}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Engineering Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body data-theme="dark">
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">EH</div>
-        <div>
-          <div style="font-weight:800">Ethan H</div>
-          <div class="muted" style="font-size:13px">Electronic & Electrical Engineer</div>
-        </div>
+<body>
+  <header>
+    <nav>
+      <h1>My Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Hello, I’m an Electronic & Electrical Engineer</h2>
+    <p>Welcome to my personal portfolio site showcasing my projects and experience.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m an Electronic & Electrical Engineer with a passion for designing circuits,
+      developing embedded systems, and solving real-world problems through innovative technology.
+      Here I’ll share my background, skills, and personal engineering journey.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="slideshow-container">
+      <!-- Project template — duplicate this block for each project -->
+      <div class="project-slide fade">
+        <img src="images/project1.jpg" alt="Project 1" />
+        <div class="caption">Project 1 – Description here</div>
       </div>
+      <!-- Add more project-slide divs as needed -->
+    </div>
 
-      <nav aria-label="Primary Navigation">
-        <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><button id="themeToggle" class="btn btn-ghost" aria-pressed="false">Toggle Theme</button></li>
-        </ul>
-      </nav>
-    </header>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </section>
 
-    <main>
-      <section class="hero">
-        <div class="hero-left">
-          <h1>Hi — I'm <span class="pill">Ethan</span>, an Electronic & Electrical Engineer.</h1>
-          <p class="lead">I design and build systems across power electronics, embedded systems, automation, and circuit design. My work bridges hardware and software to deliver reliable, innovative solutions.</p>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
 
-          <div class="cta">
-            <a class="btn btn-primary" href="#projects">View My Work</a>
-            <a class="btn btn-ghost" href="#about">Learn More</a>
-          </div>
-        </div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-        <aside class="hero-right card">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-            <div>
-              <div class="muted" style="font-size:13px">Projects</div>
-              <div style="font-weight:800">0</div>
-            </div>
-            <div>
-              <div class="muted" style="font-size:13px">Experience</div>
-              <div style="font-weight:800">5 years</div>
-            </div>
-          </div>
-          <div class="muted" style="font-size:13px">Quick Links</div>
-          <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
-            <a class="btn btn-ghost" href="https://github.com/">GitHub</a>
-            <a class="btn btn-ghost" href="#contact">Email</a>
-          </div>
-        </aside>
-      </section>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
 
-      <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects">
-          <!-- Empty project slides for now, you can duplicate and fill in with your own projects and images -->
-          <div class="project-slide active">
-            <h3>Project Title</h3>
-            <img src="" alt="Project image" style="max-width:100%;border-radius:8px;margin-bottom:10px" />
-            <p>Project description goes here...</p>
-          </div>
-          <div class="project-slide">
-            <h3>Another Project</h3>
-            <img src="" alt="Project image" style="max-width:100%;border-radius:8px;margin-bottom:10px" />
-            <p>Project description goes here...</p>
-          </div>
-        </div>
-        <div class="slide-controls">
-          <button onclick="prevSlide()">Prev</button>
-          <button onclick="nextSlide()">Next</button>
-        </div>
-      </section>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-      <div class="grid-2">
-        <section id="about">
-          <h2>About Me</h2>
-          <p class="muted">I am passionate about electronics, control systems, and renewable energy. My goal is to design solutions that are not only technically sound but also sustainable and user-focused.</p>
+  <footer>
+    <p>&copy; 2025 My Engineering Portfolio</p>
+  </footer>
 
-          <h3>Areas of Expertise</h3>
-          <ul class="muted" style="padding-left:18px">
-            <li>Embedded Systems & Microcontrollers</li>
-            <li>Power Electronics & Circuit Design</li>
-            <li>Automation & Control Engineering</li>
-            <li>Renewable Energy Systems</li>
-          </ul>
-        </section>
-
-        <aside>
-          <div class="card" id="contact">
-            <h3>Contact</h3>
-            <p class="muted">Interested in collaborating? Reach out below.</p>
-            <form id="contactForm">
-              <input id="name" placeholder="Your name" required />
-              <input id="email" placeholder="Your email" type="email" required />
-              <textarea id="message" placeholder="Short message" required></textarea>
-              <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-            <div id="notice" class="muted" style="margin-top:8px;font-size:13px"></div>
-          </div>
-        </aside>
-      </div>
-
-      <footer>
-        <div>© Ethan H — Electronic & Electrical Engineer</div>
-      </footer>
-    </main>
-  </div>
-
-  <script>
-    const root = document.documentElement;
-    const body = document.body;
-    const toggle = document.getElementById('themeToggle');
-    function setTheme(t){
-      body.setAttribute('data-theme', t);
-      localStorage.setItem('site-theme', t);
-      toggle.setAttribute('aria-pressed', t==='dark' ? 'false' : 'true');
-    }
-    const saved = localStorage.getItem('site-theme') || 'dark';
-    setTheme(saved);
-    toggle.addEventListener('click', ()=> setTheme(body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
-
-    // Project slider
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.project-slide');
-    function showSlide(n){
-      slides.forEach((s,i)=> s.classList.toggle('active', i===n));
-    }
-    function nextSlide(){
-      currentSlide = (currentSlide+1) % slides.length;
-      showSlide(currentSlide);
-    }
-    function prevSlide(){
-      currentSlide = (currentSlide-1+slides.length) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        const target = document.querySelector(a.getAttribute('href'));
-        if(target){
-          e.preventDefault();
-          target.scrollIntoView({behavior:'smooth',block:'start'});
-        }
-      })
-    });
-
-    // Contact form
-    const form = document.getElementById('contactForm');
-    const notice = document.getElementById('notice');
-    form.addEventListener('submit', (e)=>{
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      if(!name || !email || !message) { notice.textContent='Please fill all fields.'; return }
-      const subject = encodeURIComponent('Portfolio Contact from ' + name);
-      const bodyMsg = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
-      window.location.href = 'mailto:you@example.com?subject=' + subject + '&body=' + bodyMsg;
-      notice.textContent = 'Opening email client...';
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
+
